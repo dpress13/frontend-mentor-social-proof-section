@@ -1,0 +1,87 @@
+ .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-image: url(images/bg-pattern-top-mobile.svg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  margin: 5rem 1rem;
+}
+
+h1 {
+  background-color: transparent;
+  color: hsl(300, 43%, 22%);
+  font-family: 'Spartan', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  background-color: transparent;
+  color: hsl(303, 10%, 53%);
+  font-family: 'Spartan', sans-serif;
+  font-size: .9375rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.copy-intro {
+  text-align: center;
+  padding: 0;
+}
+
+
+/* Star Review */
+
+.star-review-container {
+  padding: 0;
+}
+
+.star-review-wrapper {
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 10px;
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  margin: 1rem .5rem;
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+.review-stars-row-text {
+}
+
+.review-star {
+  padding: .5rem .15rem;
+}
+
+.star-review-1 {
+
+}
+
+.star-review-2 {
+  top: .5rem;
+}
+
+.star-review-3 {
+  top: .5rem;
+}
+
+/* Testimonials */
+
+.testimonial-image {
+  border-radius: 50%;
+}
+
+.testimonial-wrapper {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  margin: 1rem .5rem;
+
+}
