@@ -38,7 +38,7 @@ h3 {
   font-family: 'Spartan', sans-serif;
   font-size: .9375rem;
   font-weight: 700;
-  margin: 0;
+  margin: 0 0 .3rem;
 }
 
 h4 {
@@ -46,6 +46,7 @@ h4 {
   font-family: 'Spartan', sans-serif;
   font-size: .9375rem;
   font-weight: 400;
+  margin: 0;
 }
 
 .copy-intro {
@@ -88,6 +89,10 @@ h4 {
 
 /* Testimonials */
 
+.testimonial-section {
+
+}
+
 .testimonial-image {
   border-radius: 50%;
   float: left;
@@ -96,12 +101,14 @@ h4 {
 }
 
 .testimonal-person-info {
-  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
 }
 
 .testimonial-text {
   color: hsl(300, 24%, 96%);
   font-weight: 500;
+  padding-top: 2rem
 }
 
 .testimonial-wrapper {
@@ -110,5 +117,6 @@ h4 {
   color: hsl(0, 0%, 100%);
   margin: 1rem .5rem;
   padding: 3rem 2rem;
+
 
 }
