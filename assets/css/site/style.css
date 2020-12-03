@@ -7164,13 +7164,13 @@ a.text-dark:hover, a.text-dark:focus {
   color: #3e52a3; }
 
 body {
-  background-image: url(images/bg-pattern-top-mobile.svg);
-  background-position: top left;
-  background-repeat: no-repeat;
+  align-content: center;
+  background-image: url("../../images/bg-pattern-top-mobile.svg"), url("../../images/bg-pattern-bottom-mobile.svg");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, no-repeat;
   font-family: "Spartan", sans-serif;
-  font-size: .9375rem;
-  margin: 5rem 1rem;
-  padding: 0 1rem; }
+  font-size: 0.9375rem;
+  margin: 5rem 1.5rem; }
 
 h1 {
   background-color: transparent;
@@ -7184,23 +7184,26 @@ h2 {
   background-color: transparent;
   color: #937b92;
   font-family: "Spartan", sans-serif;
-  font-size: .9375rem;
+  font-size: 0.9375rem;
   font-weight: 500;
   line-height: 1.5rem;
-  margin-bottom: 1.75rem; }
+  margin: 0 .1rem 1.5rem; }
 
 h3 {
   font-color: white;
-  font-family: 'Spartan', sans-serif;
-  font-size: .9375rem;
+  font-family: "Spartan", sans-serif;
+  font-size: 0.9375rem;
   font-weight: 700;
-  margin: 0 0 .3rem; }
+  margin: 0 0 0.3rem; }
 
 h4 {
   color: #ee68a4;
   font-family: "Spartan", sans-serif;
-  font-size: .9375rem;
+  font-size: 0.9375rem;
   font-weight: 400;
+  margin: 0; }
+
+.row {
   margin: 0; }
 
 .copy-intro {
@@ -7216,28 +7219,23 @@ h4 {
   background-color: #f7f2f7;
   border-radius: 10px;
   color: #502050;
+  display: flex;
+  flex-wrap: wrap;
   font-weight: 700;
-  margin: 1rem .5rem;
-  padding: 1rem;
-  justify-content: space-around; }
+  margin: 1rem 0;
+  padding: 1rem 0;
+  justify-content: center;
+  max-width: 324px; }
 
 .stars-row {
-  margin-bottom: .75rem; }
+  margin-bottom: 0.75rem; }
 
 .review-star {
-  margin: 0 .15rem; }
+  margin: 0 0.15rem; }
 
-/* .star-review-1 {
+.star-review-text {
+  text-align: center; }
 
-}
-
-.star-review-2 {
- top: .5rem;
-}
-
-.star-review-3 {
- top: .5rem;
-} */
 /* Testimonials */
 .testimonial-image {
   border-radius: 50%;
@@ -7251,7 +7249,7 @@ h4 {
 
 .testimonial-text {
   color: #f7f2f7;
-  font-size: .8125rem;
+  font-size: 0.8125rem;
   font-weight: 400;
   line-height: 1.5rem;
   padding-top: 2rem; }
@@ -7260,10 +7258,30 @@ h4 {
   background-color: #502050;
   border-radius: 10px;
   color: #f7f2f7;
-  margin: .5rem;
-  padding: 2.75rem 1.7rem; }
+  margin: 0.5rem 0;
+  padding: 2.5rem 2rem; }
+
+@media (min-width: 375px) and (max-width: 575px) {
+  .star-review-container {
+    position: relative;
+    max-width: 100%; }
+  .star-review-1 {
+    position: static; }
+  .star-review-2 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); }
+  .star-review-3 {
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%); } }
+
+@media (min-width: 768px) and (max-width: 960px) {
+  .copy-intro {
+    margin-top: 3.75rem; } }
 
 @media (min-width: 768px) {
-  .star-reivew-wrapper {
-    margin: 0;
-    padding: 0; } }
+  body {
+    background-image: url("../../images/bg-pattern-top-desktop.svg"), url("../../images/bg-pattern-bottom-desktop.svg");
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat; } }
