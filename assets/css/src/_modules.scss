@@ -1,136 +1,198 @@
 .attribution {
- font-size: 11px;
- text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
+
 .attribution a {
- color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }
 
 body {
- background-image: url(images/bg-pattern-top-mobile.svg);
- background-position: top left;
- background-repeat: no-repeat;
- font-family: $font-primary;
- font-size: .9375rem;
- margin: 5rem 1rem;
- padding: 0 1rem;
+  align-content: center;
+  background-image: url("../../images/bg-pattern-top-mobile.svg"), url("../../images/bg-pattern-bottom-mobile.svg");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+  font-family: $font-primary;
+  font-size: 0.9375rem;
+  margin: 5rem 1.5rem;
+
 }
 
 h1 {
- background-color: transparent;
- color: $dark-purple;
- font-family: $font-primary;
- font-size: 2rem;
- font-weight: $font-weight-heavy;
- margin-bottom: 1.75rem;
+  background-color: transparent;
+  color: $dark-purple;
+  font-family: $font-primary;
+  font-size: 2rem;
+  font-weight: $font-weight-heavy;
+  margin-bottom: 1.75rem;
 }
 
 h2 {
- background-color: transparent;
- color: $gray-purple;
- font-family: $font-primary;
- font-size: .9375rem;
- font-weight: $font-weight-medium;
- line-height: 1.5rem;
- margin-bottom: 1.75rem;
+  background-color: transparent;
+  color: $gray-purple;
+  font-family: $font-primary;
+  font-size: 0.9375rem;
+  font-weight: $font-weight-medium;
+  line-height: 1.5rem;
+  margin: 0 .1rem 1.5rem;
 }
 
 h3 {
- font-color: $white;
- font-family: 'Spartan', sans-serif;
- font-size: .9375rem;
- font-weight: $font-weight-heavy;
- margin: 0 0 .3rem;
+  font-color: $white;
+  font-family: $font-primary;
+  font-size: 0.9375rem;
+  font-weight: $font-weight-heavy;
+  margin: 0 0 0.3rem;
 }
 
 h4 {
- color: $pink;
- font-family: $font-primary;
- font-size: .9375rem;
- font-weight: $font-weight-light;
- margin: 0;
+  color: $pink;
+  font-family: $font-primary;
+  font-size: 0.9375rem;
+  font-weight: $font-weight-light;
+  margin: 0;
+}
+
+.row {
+  margin: 0;
 }
 
 .copy-intro {
- text-align: center;
- padding: 0;
+  text-align: center;
+  padding: 0;
 }
-
-
 /* Star Review */
-
 .star-review-container {
- margin-bottom: 1.75rem;
- padding: 0;
+  margin-bottom: 1.75rem;
+  padding: 0;
+  // position: relative;
+  // left: 50%;
+  // transform: translateX(-50%);
 }
 
 .star-review-wrapper {
- background-color:$light-gray;
- border-radius: 10px;
- color: $dark-purple;
- font-weight: $font-weight-heavy;
- margin: 1rem .5rem;
- padding: 1rem;
- justify-content: space-around;
+  background-color: $light-gray;
+  border-radius: 10px;
+  color: $dark-purple;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: $font-weight-heavy;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  justify-content: center;
+  max-width: 324px;
 }
 
 .stars-row {
- margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 .review-star {
- margin: 0 .15rem;
+  margin: 0 0.15rem;
 }
+ .star-review-text {
+   text-align: center;
+ }
 
-/* .star-review-1 {
-
-}
-
-.star-review-2 {
- top: .5rem;
-}
-
-.star-review-3 {
- top: .5rem;
-} */
 
 /* Testimonials */
-
-.testimonial-section {
-
-}
+.testimonial-section {}
 
 .testimonial-image {
- border-radius: 50%;
- float: left;
- max-width: 20%;
- margin-right: 1.5rem;
+  border-radius: 50%;
+  float: left;
+  max-width: 20%;
+  margin-right: 1.5rem;
 }
 
 .testimonal-person-info {
- display: flex;
- align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .testimonial-text {
- color: $light-gray;
- font-size: .8125rem;
- font-weight: $font-weight-light;
- line-height: 1.5rem;
- padding-top: 2rem
+  color: $light-gray;
+  font-size: 0.8125rem;
+  font-weight: $font-weight-light;
+  line-height: 1.5rem;
+  padding-top: 2rem;
 }
 
 .testimonial-wrapper {
- background-color: $dark-purple;
- border-radius: 10px;
- color: $light-gray;
- margin: .5rem;
- padding: 2.75rem 1.7rem;
+  background-color: $dark-purple;
+  border-radius: 10px;
+  color: $light-gray;
+  margin: 0.5rem 0;
+  padding: 2.5rem 2rem;
 }
 
+
+// Mobile
+
+// Finetuning - Portrait
+// @media (max-width: 439px) {
+//   .star-review-container {
+//     position: relative;
+//     left: 50%;
+//     transform: translateX(-50%);
+//   }
+// }
+
+@media (min-width: 375px) and (max-width: 575px) {
+.star-review-container {
+  position: relative;
+  max-width: 100%;
+}
+
+  .star-review-1 {
+    position: static;
+    // left: 33%;
+    // transform: translateX(-33%);
+
+  }
+
+  .star-review-2 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .star-review-3 {
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+  }
+}
+
+// Finetuning - Landscape
+// @media (min-width: 576px) {
+//   .star-review-container {
+//     margin-bottom: 1.75rem;
+//     max-width: 324px;
+//     padding: 0;
+//   }
+//
+//   .copy-intro {
+//     // margin-top: 3.25rem;
+//   }
+// }
+
+//Tablet
+
+// Finetuning Portrait
+@media (min-width: 768px) and (max-width: 960px) {
+//   // .star-review-container {
+//   //   max-width: 372px;
+//   // }
+
+  .copy-intro {
+    margin-top: 3.75rem;
+  }
+}
 @media (min-width: 768px) {
- .star-reivew-wrapper {
-   margin: 0;
-   padding: 0;
- }
+  body {
+    background-image: url("../../images/bg-pattern-top-desktop.svg"), url("../../images/bg-pattern-bottom-desktop.svg");
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+  }
 }
