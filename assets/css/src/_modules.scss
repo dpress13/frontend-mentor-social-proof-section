@@ -57,15 +57,19 @@ h4 {
   margin: 0;
 }
 
-.copy-intro {
+.intro-copy-star-review-container {
+  margin-bottom: 2.5rem;
+}
+
+.intro-copy-container {
   text-align: center;
   padding: 0;
 }
 /* Star Review */
 .star-review-container {
-  margin-bottom: 1.75rem;
   padding: 0;
   // position: relative;
+  // max-width: 100%;
   // left: 50%;
   // transform: translateX(-50%);
 }
@@ -83,6 +87,14 @@ h4 {
   max-width: 324px;
 }
 
+.star-review-1 {
+  margin-top: 0;
+}
+
+.star-review-3 {
+  margin-bottom: 0;
+}
+
 .stars-row {
   margin-bottom: 0.75rem;
 }
@@ -96,7 +108,18 @@ h4 {
 
 
 /* Testimonials */
-.testimonial-section {}
+.testimonial-container {
+  justify-content: center;
+}
+
+.testimonial-wrapper {
+  background-color: $dark-purple;
+  border-radius: 10px;
+  color: $light-gray;
+  margin: 0.5rem 0;
+  padding: 2.5rem 2rem;
+  max-width: 327px;
+}
 
 .testimonial-image {
   border-radius: 50%;
@@ -118,14 +141,6 @@ h4 {
   padding-top: 2rem;
 }
 
-.testimonial-wrapper {
-  background-color: $dark-purple;
-  border-radius: 10px;
-  color: $light-gray;
-  margin: 0.5rem 0;
-  padding: 2.5rem 2rem;
-}
-
 
 // Mobile
 
@@ -138,17 +153,9 @@ h4 {
 //   }
 // }
 
-@media (min-width: 375px) and (max-width: 575px) {
-.star-review-container {
-  position: relative;
-  max-width: 100%;
-}
-
+@media (min-width: 376px) and (max-width: 767px) {
   .star-review-1 {
     position: static;
-    // left: 33%;
-    // transform: translateX(-33%);
-
   }
 
   .star-review-2 {
@@ -164,6 +171,47 @@ h4 {
   }
 }
 
+@media (min-width: 376px) and (max-width: 767px) {
+
+  body {
+    max-width: 500px;
+    position: relative;
+    left: 40%;
+    transform: translateX(-40%);
+  }
+
+  .testimonial-1 {
+    position: relative;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .testimonial-2 {
+    position: static;
+  }
+
+  .testimonial-3 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+
+@media (min-width: 768px) {
+
+  .intro-copy-container {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    text-align: left;
+  }
+}
+// @media (min-width: 703px) {
+//   .testimonial-wrapper {
+//     margin: .5rem;
+//   }
+// }
 // Finetuning - Landscape
 // @media (min-width: 576px) {
 //   .star-review-container {
@@ -172,7 +220,7 @@ h4 {
 //     padding: 0;
 //   }
 //
-//   .copy-intro {
+//   .intro-copy-container{
 //     // margin-top: 3.25rem;
 //   }
 // }
@@ -180,15 +228,7 @@ h4 {
 //Tablet
 
 // Finetuning Portrait
-@media (min-width: 768px) and (max-width: 960px) {
-//   // .star-review-container {
-//   //   max-width: 372px;
-//   // }
 
-  .copy-intro {
-    margin-top: 3.75rem;
-  }
-}
 @media (min-width: 768px) {
   body {
     background-image: url("../../images/bg-pattern-top-desktop.svg"), url("../../images/bg-pattern-bottom-desktop.svg");
