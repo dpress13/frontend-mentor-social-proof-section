@@ -7170,7 +7170,7 @@ body {
   background-repeat: no-repeat, no-repeat;
   font-family: "Spartan", sans-serif;
   font-size: 0.9375rem;
-  margin: 5rem 1.5rem; }
+  margin: 6rem 1.5rem; }
 
 h1 {
   background-color: transparent;
@@ -7178,7 +7178,7 @@ h1 {
   font-family: "Spartan", sans-serif;
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 1.75rem; }
+  margin: 0; }
 
 h2 {
   background-color: transparent;
@@ -7187,10 +7187,10 @@ h2 {
   font-size: 0.9375rem;
   font-weight: 500;
   line-height: 1.5rem;
-  margin: 0 .1rem 1.5rem; }
+  margin: 0; }
 
 h3 {
-  font-color: white;
+  color: white;
   font-family: "Spartan", sans-serif;
   font-size: 0.9375rem;
   font-weight: 700;
@@ -7207,13 +7207,16 @@ h4 {
   margin: 0; }
 
 .intro-copy-star-review-container {
-  margin-bottom: 2.5rem; }
+  margin-bottom: 3.5rem; }
 
 .intro-copy-container {
   text-align: center;
-  padding: 0; }
+  padding: 0;
+  margin: 0 0 1rem; }
 
-/* Star Review */
+.main-headline-container {
+  margin: 0 0 1.5rem; }
+
 .star-review-container {
   padding: 0; }
 
@@ -7224,7 +7227,7 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   font-weight: 700;
-  margin: 1rem 0;
+  margin: 0 0 1rem;
   padding: 1rem 0;
   justify-content: center;
   max-width: 324px; }
@@ -7245,16 +7248,12 @@ h4 {
   text-align: center; }
 
 /* Testimonials */
-.testimonial-container {
-  justify-content: center; }
-
 .testimonial-wrapper {
   background-color: #502050;
   border-radius: 10px;
   color: #f7f2f7;
-  margin: 0.5rem 0;
-  padding: 2.5rem 2rem;
-  max-width: 327px; }
+  margin: 0 0 1rem;
+  padding: 2.5rem 2rem; }
 
 .testimonial-image {
   border-radius: 50%;
@@ -7264,14 +7263,14 @@ h4 {
 
 .testimonal-person-info {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  padding-bottom: 2rem; }
 
 .testimonial-text {
   color: #f7f2f7;
   font-size: 0.8125rem;
   font-weight: 400;
-  line-height: 1.5rem;
-  padding-top: 2rem; }
+  line-height: 1.5rem; }
 
 @media (min-width: 376px) and (max-width: 767px) {
   .star-review-1 {
@@ -7283,33 +7282,58 @@ h4 {
   .star-review-3 {
     position: relative;
     left: 100%;
-    transform: translateX(-100%); } }
-
-@media (min-width: 376px) and (max-width: 767px) {
-  body {
-    max-width: 500px;
-    position: relative;
-    left: 40%;
-    transform: translateX(-40%); }
+    transform: translateX(-100%); }
   .testimonial-1 {
-    position: relative;
-    right: 50%;
-    transform: translateX(50%); }
-  .testimonial-2 {
     position: static; }
-  .testimonial-3 {
+  .testimonial-2 {
     position: relative;
     left: 50%;
-    transform: translateX(-50%); } }
-
-@media (min-width: 768px) {
-  .intro-copy-container {
-    margin-top: 1.5rem;
-    padding: 1rem;
-    text-align: left; } }
+    transform: translateX(-50%); }
+  .testimonial-3 {
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%); } }
 
 @media (min-width: 768px) {
   body {
     background-image: url("../../images/bg-pattern-top-desktop.svg"), url("../../images/bg-pattern-bottom-desktop.svg");
     background-position: top left, bottom right;
-    background-repeat: no-repeat, no-repeat; } }
+    background-repeat: no-repeat, no-repeat; }
+  h1 {
+    font-size: 3rem; }
+  .intro-copy-container {
+    text-align: left;
+    margin: 0; }
+  .main-headline-container {
+    max-width: 391px; }
+  .star-review-wrapper {
+    padding: .75rem 0; }
+  .star-review-1 {
+    position: static; }
+  .star-review-2 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); }
+  .star-review-3 {
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%); }
+  .testimonial-container {
+    justify-content: center; }
+  .testimonial-1 {
+    margin: 0 1rem 1rem 0; }
+  .testimonial-2 {
+    margin: 0 1rem 1rem; }
+  .testimonial-3 {
+    margin: 1rem 0 0 1rem; } }
+
+@media (min-width: 768px) and (max-width: 880px) {
+  .subheadline-container {
+    width: 425px; } }
+
+@media (min-width: 920px) {
+  .star-review-wrapper {
+    justify-content: left;
+    max-width: 435px; }
+  .stars-row {
+    margin: 0 2rem; } }
