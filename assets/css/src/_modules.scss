@@ -1,5 +1,6 @@
 .attribution {
   font-size: 11px;
+  margin-top: 1rem;
   text-align: center;
 }
 
@@ -52,18 +53,19 @@ h4 {
   margin: 0;
 }
 // Intro Copy
+
 .row {
   margin: 0;
 }
 
 .intro-copy-star-review-container {
-  margin-bottom: 3.5rem;
+  margin-bottom: 4rem;
 }
 
 .intro-copy-container {
   text-align: center;
   padding: 0;
-  margin: 0 0 1rem;
+  margin: 0 0 2.75rem;
 }
 
 .main-headline-container {
@@ -108,11 +110,8 @@ h4 {
 .star-review-text {
   text-align: center;
 }
-
 /* Testimonials */
-.testimonial-container {
-  // justify-content: center;
-}
+.testimonial-container {}
 
 .testimonial-wrapper {
   background-color: $dark-purple;
@@ -141,50 +140,51 @@ h4 {
   font-weight: $font-weight-light;
   line-height: 1.5rem;
 }
-
+// Media Queries //
 // Mobile Finetuning
-@media (min-width: 376px) and (max-width: 767px) {
-
-  .star-review-1 {
-    position: static;
-  }
-
-  .star-review-2 {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .star-review-3 {
-    position: relative;
-    left: 100%;
-    transform: translateX(-100%);
-  }
-
-  .testimonial-1 {
-    position: static;
-  }
-
-  .testimonial-2 {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .testimonial-3 {
-    position: relative;
-    left: 100%;
-    transform: translateX(-100%);
-  }
-}
-
-@media (min-width: 768px) {
+@media (min-width: 376px) {
   body {
     background-image: url("../../images/bg-pattern-top-desktop.svg"), url("../../images/bg-pattern-bottom-desktop.svg");
     background-position: top left, bottom right;
     background-repeat: no-repeat, no-repeat;
   }
+  @media (max-width: 767px) {
+    .star-review-1 {
+      position: static;
+    }
 
+    .star-review-2 {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .star-review-3 {
+      position: relative;
+      left: 100%;
+      transform: translateX(-100%);
+    }
+
+    .testimonial-1 {
+      position: static;
+    }
+
+    .testimonial-2 {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .testimonial-3 {
+      position: relative;
+      left: 100%;
+      transform: translateX(-100%);
+    }
+  }
+}
+// Tablet Finetuning
+
+@media (min-width: 768px) {
   h1 {
     font-size: 3rem;
   }
@@ -196,26 +196,15 @@ h4 {
 
   .main-headline-container {
     max-width: 391px;
+    margin: 0 0 1rem;
+  }
+
+  .subheadline-container {
+    width: 425px;
   }
 
   .star-review-wrapper {
-    padding: .75rem 0;
-  }
-
-  .star-review-1 {
-    position: static;
-  }
-
-  .star-review-2 {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .star-review-3 {
-    position: relative;
-    left: 100%;
-    transform: translateX(-100%);
+    padding: 1.25rem 0;
   }
 
   .testimonial-container {
@@ -233,20 +222,73 @@ h4 {
   .testimonial-3 {
     margin: 1rem 0 0 1rem;
   }
-  @media (max-width: 880px) {
-    .subheadline-container {
-      width: 425px;
+  @media (max-width: 919px) {
+    .star-review-wrapper {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }
-
 @media (min-width: 920px) {
   .star-review-wrapper {
     justify-content: left;
-    max-width: 435px;
+    max-width: 475px;
+    margin-top: 1rem;
   }
 
   .stars-row {
     margin: 0 2rem;
+  }
+
+  .star-review-1 {
+    position: static;
+  }
+
+  .star-review-2 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .star-review-3 {
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+  }
+
+}
+@media (min-width: 992px) {
+  .subheadline-container {
+    width: 453px;
+  }
+
+  .testimonial-text {
+    font-size: 1.05rem;
+    line-height: 1.75rem;
+  }
+
+  .testimonial-1 {
+    position: static;
+  }
+
+  .testimonial-2 {
+    position: relative;
+    top: 1rem;
+  }
+
+  .testimonial-3 {
+    position: relative;
+    top: 1rem;
+  }
+
+}
+
+@media (min-width: 1440px) {
+  body {
+    max-width: 1392px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
