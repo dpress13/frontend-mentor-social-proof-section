@@ -1,5 +1,23 @@
 
-  @mixin background-images {
+@mixin background-image-positioning {
   background-position: top left, bottom right;
   background-repeat: no-repeat, no-repeat;
+}
+
+@mixin star-review-expand {
+  .star-review-1 {
+    position: static;
+  }
+
+  .star-review-2 {
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+  }
+
+  .star-review-3 {
+    left: 100%;
+    position: relative;
+    transform: translateX(-100%);
+  }
 }
