@@ -12,7 +12,7 @@ function style() {
 
 exports.style = style;
 
-// Browsersync - Static Server + Watch SCSS/html Files
+// Browsersync - Static Server + Watch SCSS/HTMLS Files
 function watch() {
     browserSync.init({
         server: {
