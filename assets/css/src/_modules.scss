@@ -2,6 +2,7 @@
   font-size: 11px;
   margin-top: 1rem;
   text-align: center;
+  padding-top: 2rem;
 }
 
 .attribution a {
@@ -63,17 +64,16 @@ h4 {
 }
 
 .intro-copy-container {
-  text-align: center;
-  padding: 0;
   margin: 0 0 2.75rem;
+  padding: 0;
+  text-align: center;
 }
 
 .main-headline-container {
   margin: 0 0 1.5rem;
 }
-
-.subheadline-container {}
 // Star Review
+
 .star-review-container {
   padding: 0;
 }
@@ -85,10 +85,10 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   font-weight: $font-weight-heavy;
-  margin: 0 0 1rem;
-  padding: 1rem 0;
   justify-content: center;
+  margin: 0 0 1rem;
   max-width: 324px;
+  padding: 1rem 0;
 }
 
 .star-review-1 {
@@ -124,13 +124,13 @@ h4 {
 .testimonial-image {
   border-radius: 50%;
   float: left;
-  max-width: 20%;
   margin-right: 1.5rem;
+  max-width: 20%;
 }
 
 .testimonal-person-info {
-  display: flex;
   align-items: center;
+  display: flex;
   padding-bottom: 2rem;
 }
 
@@ -154,14 +154,14 @@ h4 {
     }
 
     .star-review-2 {
-      position: relative;
       left: 50%;
+      position: relative;
       transform: translateX(-50%);
     }
 
     .star-review-3 {
-      position: relative;
       left: 100%;
+      position: relative;
       transform: translateX(-100%);
     }
 
@@ -170,33 +170,32 @@ h4 {
     }
 
     .testimonial-2 {
-      position: relative;
       left: 50%;
+      position: relative;
       transform: translateX(-50%);
     }
 
     .testimonial-3 {
-      position: relative;
       left: 100%;
+      position: relative;
       transform: translateX(-100%);
     }
   }
 }
 // Tablet Finetuning
-
 @media (min-width: 768px) {
   h1 {
     font-size: 3rem;
   }
 
   .intro-copy-container {
-    text-align: left;
     margin: 0;
+    text-align: left;
   }
 
   .main-headline-container {
-    max-width: 391px;
     margin: 0 0 1rem;
+    max-width: 391px;
   }
 
   .subheadline-container {
@@ -224,8 +223,8 @@ h4 {
   }
   @media (max-width: 919px) {
     .star-review-wrapper {
-      position: relative;
       left: 50%;
+      position: relative;
       transform: translateX(-50%);
     }
   }
@@ -233,8 +232,8 @@ h4 {
 @media (min-width: 920px) {
   .star-review-wrapper {
     justify-content: left;
-    max-width: 475px;
     margin-top: 1rem;
+    max-width: 475px;
   }
 
   .stars-row {
@@ -246,17 +245,17 @@ h4 {
   }
 
   .star-review-2 {
-    position: relative;
     left: 50%;
+    max-width: 475px;
+    position: relative;
     transform: translateX(-50%);
   }
 
   .star-review-3 {
-    position: relative;
     left: 100%;
+    position: relative;
     transform: translateX(-100%);
   }
-
 }
 @media (min-width: 992px) {
   .subheadline-container {
@@ -281,14 +280,10 @@ h4 {
     position: relative;
     top: 1rem;
   }
-
 }
-
 @media (min-width: 1440px) {
   body {
-    max-width: 1392px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 6rem auto;
+    max-width: 1391px;
   }
 }
