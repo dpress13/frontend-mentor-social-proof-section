@@ -1,3 +1,5 @@
+// https://gist.github.com/jeromecoupe/0b807b0c1050647eb340360902c3203a
+
 "use strict";
 
 // Load Plugins
@@ -110,19 +112,19 @@ function css() {
 // Watch Files
 function watchFiles() {
   gulp.watch("assets/css/src/scss/*.scss", css);
-  gulp.watch('./*.html').on('change',browserSyncReload); // Added this entire line
-  // gulp.watch('./js/**/*.js').on('change', browserSync.reload); Added this entire line
+  // gulp.watch("./*.html", browserSyncReload); // Added this entire line
   // gulp.watch("./assets/js/**/*", gulp.series(scriptsLint, scripts));
-  // gulp.watch(
-  //   [
-  //     "./_includes/**/*",
+  gulp.watch(
+    [
+         "./*.html",
   //     "./_layouts/**/*",
   //     "./_pages/**/*",
   //     "./_posts/**/*",
   //     "./_projects/**/*"
-  //   ],
-  //   gulp.series(jekyll, browserSyncReload)
-  // );
+    ],
+    browserSyncReload
+//   gulp.series(jekyll, browserSyncReload)
+  );
   // gulp.watch("./assets/img/**/*", images);
 }
 
